@@ -1,0 +1,8 @@
+version: 24.0.6
+services:
+  java_app:
+    container_name: practica_spring_boot
+    image: practica_spring_boot:1.0.0
+    build: .
+    ports:
+      - 8080:8080

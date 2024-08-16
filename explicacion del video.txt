@@ -1,0 +1,59 @@
+El video explica cómo crear una aplicación CRUD con Spring Boot 3 y Angular 17, abarcando desde la configuración del backend con una base de datos en memoria hasta la creación de la interfaz de usuario en Angular. Se detalla la implementación de la API RESTful, el manejo de dependencias y la validación de datos. Finalmente, se muestra cómo inicializar formularios y gestionar rutas en Angular para completar la funcionalidad de la aplicación.
+Detailed Summary for [CRUD con Spring Boot 3 y Angular 17](https://www.youtube.com/watch?v=zTSDxPFacGg) by [Monica](https://monica.im)
+
+  [00:00](https://www.youtube.com/watch?v=zTSDxPFacGg&t=0.04) Creación de una API con Spring Boot y base de datos en memoria
+  - Desarrollo de una aplicación web con Spring Boot}
+- Diseño de una tabla llamada 'contacto' con columnas específicas}
+- Preparación para arrancar con la creación del backend y la API}
+- Sugerencia de utilizar una base de datos en memoria para simplificar el proceso}
+- Recomendación de utilizar Start.spring.io como base para el proyecto}
+      
+[26:23](https://www.youtube.com/watch?v=zTSDxPFacGg&t=1583.399) Generación de constructores con Spring Boot
+  - Uso de la anotación @RequiredArgsConstructor para generar constructores}
+- Utilización de la anotación @NonNull para especificar argumentos obligatorios}
+- Corrección de error al no tener constructor vacío con la anotación @NoArgsConstructor}
+- Ejemplo de creación de contactos con nombres y correos electrónicos}
+- Persistencia de contactos en la base de datos con Spring Boot}
+      
+[52:50](https://www.youtube.com/watch?v=zTSDxPFacGg&t=3170.72) Actualización de registros en la base de datos
+  - Separación de datos con una coma}
+- Envío de un contacto sin ID}
+- Actualización de contacto con ID específico}
+- Envío de solicitud de actualización}
+- Creación de un nuevo registro por falta de ID}
+      
+[01:19:15](https://www.youtube.com/watch?v=zTSDxPFacGg&t=4755.52) Creación de la parte del cliente web con Angular y configuración de un cliente HTTP
+  - Se inicia la creación de la parte del cliente web con Angular}
+- Configuración de estilos y dependencias del proyecto}
+- Arranque del servidor de pruebas del proyecto}
+- Realización de pequeños cambios para iniciar el proyecto}
+- Agregar un proveedor para un cliente HTTP en Angular 17}
+      
+[01:45:41](https://www.youtube.com/watch?v=zTSDxPFacGg&t=6341.119) Creación de formulario de contacto con Angular y Spring Boot
+  - Configuración de la navegación para un nuevo contacto}
+- Importación del módulo router en la clase de contact list}
+- Diseño de la plantilla para el formulario de contacto}
+- Estructura HTML para el formulario con campos de nombre y email}
+- Alineación de botones 'Crear contacto' y 'Cancelar' en la interfaz}
+      
+[02:12:09](https://www.youtube.com/watch?v=zTSDxPFacGg&t=7929.32) Inicialización de datos de contacto desde el API para un formulario reactivo
+  - Obteniendo contacto con ID2, incluyendo email, nombre y fecha de creación}
+- Utilizando los datos del contacto para inicializar un formulario}
+- Definiendo el tipo de formulario y marcándolo como opcional}
+- Iniciando los datos del formulario con los datos del contacto}
+- Corrigiendo un posible error asumiendo que el formulario puede ser indefinido}
+      
+[02:38:34](https://www.youtube.com/watch?v=zTSDxPFacGg&t=9514.399) Actualización de contactos desde la base de datos
+  - Asignación de valores desde contact dto}
+- Fuente y destino de la actualización de contact from db}
+- Refactorización de model mapper para reutilizar objeto}
+- Diferencia entre model mapper y repositorio en Spring}
+- Declaración de objeto gestionado por Spring para reutilización}
+      
+[03:05:00](https://www.youtube.com/watch?v=zTSDxPFacGg&t=11100.239) Manejo de excepciones en la validación de datos
+  - Utilización de la anotación 'validated' de Spring framework}
+- Prueba de la característica de creación con Postman}
+- Errores específicos en la validación de datos}
+- Comunicación adecuada del status de error al cliente}
+- Creación de un manejador de excepciones para 'method argument not valid'}
+      
